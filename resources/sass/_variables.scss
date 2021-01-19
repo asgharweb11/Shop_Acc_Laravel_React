@@ -1,0 +1,42 @@
+// Body
+$body-bg: #f8fafc;
+// Typography
+$font-family-sans-serif: 'Nunito',
+sans-serif;
+$fontSizeSm: 0.9em;
+$fontSizeMd: 1em;
+$fontSizeLg: 1.5em;
+$fontSizeXl: 2em;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+// Colors
+$white: #ffffff;
+$blackLightSm: #383838;
+$blue: #3490dc;
+$indigo: #6574cd;
+$bluedark: #442db9;
+$bluedark2: #4734a5;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+// functions
+@mixin flex($dir, $justify, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// RGB Colors
+$rgbBlue: rgba(136, 124, 225, 0.502);
+$rgblight: rgb(199 199 199 / 50%);
+// Hex/light Color
+$hexlight: #0000004f;
+// Box Shadow
+$boxlight: 0px 0px 10px 0px;
+$boxlight2: 0px 9px 20px 0px;

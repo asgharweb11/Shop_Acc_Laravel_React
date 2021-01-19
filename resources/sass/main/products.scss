@@ -1,0 +1,109 @@
+@import "../variables.scss";
+.cards-special {
+    margin-top: -450px;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 9px 20px 0px $hexlight;
+}
+
+.card .card-topic {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #ec82fd, #f7c4ec);
+    color: $white;
+    border-radius: 10px;
+    box-shadow: $boxlight2 $hexlight;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.card-body .icon {
+    font-size: 20px;
+    color: #ef95f8;
+}
+
+.card-title {
+    padding: 20px 0px;
+}
+
+.card-details {
+    border-top: 2px dotted $rgblight;
+    border-bottom: 2px dotted $rgblight;
+}
+
+.card-details li {
+    list-style: none;
+}
+
+.card-date p {
+    text-shadow: 2px 4px 4px #ff00e06b;
+    color: #f150b8;
+    text-align: center;
+}
+
+.card-footers .more {
+    display: block;
+    width: 60%;
+    background: linear-gradient(0deg, #4528dc 0%, #9494ff 80%);
+    padding: 10px;
+    text-align: center;
+    color: $white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px #0000ff52;
+}
+
+// --------- Component allProducts.js
+.allProducts .line {
+    border: 3px dashed #e8e8e8;
+    margin: 10em 0px;
+    position: relative;
+}
+
+.allProducts .line::after {
+    content: "اکانت های کاربران";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $fontSizeLg;
+    background: linear-gradient(0deg, #9542e0, #aaa4ff);
+    padding: 15px;
+    border-radius: 10px;
+    border: 5px solid #e8e8e8;
+    color: $white;
+}
+
+.btnpage ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btnpage .link {
+    border-radius: 30px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    @include flex(row, center, center);
+    color: $blackLightSm;
+    font-size: $fontSizeMd;
+    box-shadow: 0px 3px 10px 0px #00000021;
+    transition: 0.2s ease-in-out;
+}
+
+.btnpage ul li:nth-child(2) .link,
+.link:hover {
+    -webkit-bacground: linear-gradient(0deg, #ef48a4, #6565ff);
+    -moz-bacground: linear-gradient(0deg, #ef48a4, #6565ff);
+    -ms-bacground: linear-gradient(0deg, #ef48a4, #6565ff);
+    -moz-bacground: linear-gradient(0deg, #ef48a4, #6565ff);
+    background: linear-gradient(0deg, #ef48a4, #6565ff);
+    color: $white;
+}

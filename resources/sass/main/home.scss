@@ -1,0 +1,45 @@
+@import "../variables.scss";
+// --------------------- Styles Compoent Header --------------
+.header-main {
+    // @include flex(column , flex-start , center);
+    padding: 60px;
+    padding-bottom: 40em;
+    padding-top: 20px;
+    background-image: url(/images/content/hero-bg.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.TopestHeader {
+    border-bottom: 1px solid $rgbBlue;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    border: 1px solid $rgbBlue;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+    border-radius: 30px;
+    background: $bluedark2;
+    color: $white;
+}
+
+.search input::placeholder {
+    color: white;
+}
+
+.search .iconSearch {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+}
